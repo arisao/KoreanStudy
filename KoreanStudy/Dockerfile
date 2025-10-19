@@ -13,5 +13,5 @@ RUN ./gradlew clean build -x test
 # Run the app
 CMD ["java", "-jar", "build/libs/KoreanStudy-0.0.1-SNAPSHOT.jar"]
 
-ENV PORT 9090
+ENV PORT 8080
 ENTRYPOINT ["sh", "-c", "java -Dserver.port=$PORT -jar /app.jar"]
